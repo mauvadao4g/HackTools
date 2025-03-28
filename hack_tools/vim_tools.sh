@@ -27,7 +27,7 @@ check_status() {
         echo_color "green" "✅ $1"
     else
         echo_color "red" "❌ Erro ao $1"
-        exit 1
+        # exit 1
     fi
 }
 
@@ -230,7 +230,7 @@ echo ""
 # Verificar permissões de root
 if [ "$EUID" -ne 0 ]; then 
     echo_color "red" "❌ Este script precisa ser executado como root (sudo)"
-    exit 1
+    # exit 1
 fi
 
 # Menu principal
